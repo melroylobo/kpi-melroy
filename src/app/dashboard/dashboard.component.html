@@ -1,0 +1,217 @@
+<!-- <h1>Dashboard</h1>
+<p>Welcome to the dashboard!</p> -->
+
+<nav class="main-nav">
+  <ul>
+    <li><a class="main-link" href="#">ORACLE </a></li>
+    <li><a class="main-link" href="#">NETSUITE</a></li>
+    <li><i class="fas fa-user"></i>
+    </li>
+    <li>
+      <form> <input type="text" style="border: 1px solid
+     black;" placeholder="Search" name="search">
+        <i class="fa fa-search"></i>
+      </form>
+    </li>
+
+    <nav class="nav-right">
+      <ul>
+        <li><a href="#"> <i class="fa fa-question-circle"></i>Help</a></li>
+        <li><a href="#"><i class="fa fa-commenting" aria-hidden="true"></i>
+            Feedback</a></li>
+        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>
+            Administrator</a></li>
+      </ul>
+    </nav>
+  </ul>
+</nav>
+
+
+<nav>
+  <ul class="nav-items-look">
+    <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i> </a></li>
+    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> </a></li>
+    <li><a href="#">Activities </a></li>
+
+    <li><a href="#">Rentegrate </a></li>
+    <li><a href="#">PR Suite </a></li>
+    <li><a href="#">Payments </a></li>
+    <li><a href="#">Transactions </a></li>
+    <li><a href="#">Lists </a></li>
+    <li><a href="#">Analytics </a></li>
+    <li><a href="#">Documents </a></li>
+    <li><a href="#">Setup </a></li>
+    <li><a href="#">Customization </a></li>
+    <li><a href="#">Commerce </a></li>
+    <li><a href="#">Support </a></li>
+    <li><a href="#">Fixed Assets </a></li>
+    <li><a href="#">Suite Social </a></li>
+    <li><a href="#">Test KPI Tab </a></li>
+    <li><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+      </a></li>
+
+
+  </ul>
+</nav>
+
+<div>
+  <h4 style="color: #516e81; margin-left: 15px;">Rentegrate</h4>
+</div>
+
+<div class="dashboard-container" cdkDropList (cdkDropListDropped)="onDrop($event)"
+  style="display: flex; transition: all 0.3s ease;">
+  <div class="card" *ngFor="let card of cards; let i = index"  cdkDrag [cdkDragData]="card" 
+    [ngStyle]="{ 'flex': i === 1 ? '2' : '1', 'transform': card.transform }  ">
+    <div class="dashboard-card">
+
+      <div *ngIf="i === 0">
+        <section class="price_plan_area section_padding_130_80" id="pricing">
+          <div class="container">
+            <div class="row justify-content-center">
+
+
+              <!-- Card Rentegrate-->
+              <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="single_price_plan active wow fadeInUp" data-wow-delay="0.2s"
+                  style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                  <!-- Side Shape-->
+                  <div class="side-shape"><img src="https://bootdey.com/img/popular-pricing.png" alt=""></div>
+                  <div class="title"><span style="margin-top: 5px;">Remainders</span>
+                    <div style=" border-left: 6px solid #c9901d;" class="vertical-line"></div>
+                    <h3 style="margin: 0;">131</h3>
+                    <p style="margin: 0;">RENTEGRATE - Due to pickup</p>
+                  </div>
+
+                  <div class="title">
+                    <div style=" border-left: 6px solid #d71717;" class="vertical-line"></div>
+                    <h3 style="margin: 0;">0</h3>
+                    <p style="margin: 0;">RENTEGRATE - Unbilled estimated revenue</p>
+                  </div>
+
+                  <div class="title">
+                    <div style=" border-left: 6px solid #d71717;" class="vertical-line"></div>
+                    <h3 style="margin: 0;">588</h3>
+                    <p style="margin: 0;">RENTEGRATE - ROD's expired</p>
+                  </div>
+
+                  <div class="title">
+                    <div style=" border-left: 6px solid #194cc3;" class="vertical-line"></div>
+                    <h3 style="margin: 0;">6,558</h3>
+                    <p style="margin: 0;">RENTEGRATE - ROBD's To Be Invoice</p>
+                  </div>
+                  <div class="line"></div>
+
+
+                  <div class="title" style="margin: 0;">
+                    <div style=" border-left: 6px solid #68531e;" class="vertical-line-short"></div>
+                    <h6 style="margin: 0;"><span class="short-span">5%</span>RENTEGRATE - ROD's expiry details </h6>
+                  </div>
+
+                  <div class="title" style="margin: 0;">
+                    <div style=" border-left: 6px solid #fa9817;" class="vertical-line-short"></div>
+                    <h6 style="margin: 0;"><span class="short-span">0</span>RENTEGRATE - Fleet Unavailable for Rent
+                    </h6>
+                  </div>
+
+                  <div class="title" style="margin: 0;">
+                    <div style=" border-left: 6px solid #182e85;" class="vertical-line-short"></div>
+                    <h6 style="margin: 0;"><span class="short-span">312</span>RENTEGRATE - Assets Returned </h6>
+                  </div>
+
+
+
+
+
+
+                  <div class="button"><a class="btn btn-warning" href="#">Get Started</a></div>
+                </div>
+              </div>
+
+              <!-- Card Rentegrate-->
+              <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="single_price_plan active wow fadeInUp" data-wow-delay="0.2s"
+                  style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                  <!-- Side Shape-->
+                  <div class="side-shape"><img src="https://bootdey.com/img/popular-pricing.png" alt=""></div>
+                  <div class="title"><span style="margin-top: 5px; color: #fff !important; background-color: #516e81;">KPI Meter</span>
+                    <div style=" border-left: 6px solid #c9901d;" class="vertical-line"></div>
+                    <h3 style="margin: 0;">131</h3>
+                    <p style="margin: 0;">RENTEGRATE - Due to pickup</p>
+                  </div>
+
+                  <div class="title">
+                    <div style=" border-left: 6px solid #d71717;" class="vertical-line"></div>
+                    <h3 style="margin: 0;">0</h3>
+                    <p style="margin: 0;">RENTEGRATE - Unbilled estimated revenue</p>
+                  </div>
+
+                  <div class="title">
+                    <div style=" border-left: 6px solid #d71717;" class="vertical-line"></div>
+                    <h3 style="margin: 0;">588</h3>
+                    <p style="margin: 0;">RENTEGRATE - ROD's expired</p>
+                  </div>
+
+                  <div class="title">
+                    <div style=" border-left: 6px solid #194cc3;" class="vertical-line"></div>
+                    <h3 style="margin: 0;">6,558</h3>
+                    <p style="margin: 0;">RENTEGRATE - ROBD's To Be Invoice</p>
+                  </div>
+                  <div class="line"></div>
+
+
+                  <div class="title" style="margin: 0;">
+                    <div style=" border-left: 6px solid #68531e;" class="vertical-line-short"></div>
+                    <h6 style="margin: 0;"><span class="short-span">5%</span>RENTEGRATE - ROD's expiry details </h6>
+                  </div>
+
+                  <div class="title" style="margin: 0;">
+                    <div style=" border-left: 6px solid #fa9817;" class="vertical-line-short"></div>
+                    <h6 style="margin: 0;"><span class="short-span">0</span>RENTEGRATE - Fleet Unavailable for Rent
+                    </h6>
+                  </div>
+
+                  <div class="title" style="margin: 0;">
+                    <div style=" border-left: 6px solid #182e85;" class="vertical-line-short"></div>
+                    <h6 style="margin: 0;"><span class="short-span">312</span>RENTEGRATE - Assets Returned </h6>
+                  </div>
+
+
+
+
+
+
+                  <div class="button"><a class="btn btn-warning" href="#">Get Started</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div *ngIf="i === 1">
+        <canvas id="myChart"></canvas>
+      </div>
+      <!-- <div *ngIf="i !== 1 && i !== 2">
+        <p>{{ card.content }}</p>
+      </div> -->
+      <div *ngIf="i === 2">
+        <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"
+          style="width: 100%; height: 100%; display: block;">
+        </highcharts-chart>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container" fxLayout fxLayoutAlign="center" fxLayoutGap="10px" fxLayout.xs="column" fxLayoutGap.xs="0"
+  cdkDropList (cdkDropListDropped)="drop($event)">
+  <div class="item item-1" fxFlex="25%" cdkDrag>
+    Item 1
+  </div>
+  <div class="item item-2" fxFlex cdkDrag>
+    Item 2
+  </div>
+  <div class="item item-3" fxFlex="25%" cdkDrag>
+    Item 3
+  </div>
+</div> -->
